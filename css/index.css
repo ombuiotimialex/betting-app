@@ -1,9 +1,10 @@
 
 .mainContainer{
+    background-color: sandybrown;
     margin: auto;
     width: 300px;
     border: 1px solid darkblue;
-    height: 200px;
+    height: 400px;
     border-radius: 15px 15px;
     box-shadow: #cccccc 2px 2px 5px 6px;
 
@@ -21,4 +22,61 @@
     height: 200px;
     border-radius: 15px 15px;
     box-shadow: #cccccc 2px 2px 5px 6px;
+}
+.hidden{
+    visibility: hidden;
+}
+.shown{
+    visibility: visible;
+}
+
+.circular{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.rounded-corner-top-left{
+    border-top-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+}
+.rounded-corner-top-right{
+    border-top-right-radius: 15px;
+}
+.rounded-corner-bottom-left{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+.bet{
+    background-color: black;
+    color: white;
+    onmouseover:background-color white;
+}
+.history{
+    background-color: black;
+    color: white;
+}
+.payments{
+    background-color: black;
+    color: white;
+}
+.matches{
+    border-radius: 6px;
+    border: 1px solid white;
+    width: auto;
+    margin: auto;
+    height: 400px;
+
+}
+.colour{
+    background-color: black;
+    color: white;
+}
+.bets{
+    color: black;
+    background-color: beige;
+    margin: auto;
+    border-radius: 15px;
+    border: 1px solid greenyellow;
 }

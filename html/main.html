@@ -8,50 +8,345 @@
     <link rel="stylesheet" href="../css/index.css" type="text/css">
 </head>
 <body>
-<div class="main" id="bet-Container">
+<div class="main">
+    <!--  Table containing content  -->
     <table class="mainContainer" border="1" align="center">
+        <!--        Row containing image name and balance-->
+        <tr>
+            <td class="rounded-corner-top-left">
+                <img src="../img/001.jpg" width="64px" height="64px" class="circular">
+            </td>
+            <td colspan="2" class="rounded-corner-top-right">
+                <div>
+                    <p>Name:</p>
+                    <p> Balance:</p>
+                </div>
+            </td>
+        </tr>
+        <!--        Row containing buttons place bet, bet history and payments-->
         <tr>
             <td>
-                <img src="../img/001.jpg">
-                <div>
-            <td colspan="2">
-                <p>Name:</p>
-                <p> Balance:</p>
-
-
+                <div align="center">
+                    <input type="button" value="Place Bet" onclick="updateContent('placeBetContainer')"
+                           width="100%" class="bet">
+                </div>
             </td>
-</div>
-</td>
-</tr>
-<tr>
-    <div>
-        <td>
-            <div class="main" id="placeBetContainer">
-                <input type="button" value="Place Bet" id="placeBet">
+            <td>
+                <div align="center">
+                    <input type="button" value="Bet History"
+                           onclick="updateContent('betHistoryContainer')" width="100%" class="history">
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <input type="button" value="Payments" onclick="updateContent('paymentsContainer')"
+                           width="100%" class="payments">
+                </div>
+            </td>
+        </tr>
+        <!--        Row containing content of place bet, bet history and payments coming soon-->
+        <tr>
+            <td colspan="3">
+                <div align="center" id="placeBetContainer" class="hidden">
+                    <table class="matches">
+                        <tr>
 
-            </div>
-        </td>
-        <td>
-            <div class="main" id="betHistoryContainer">
-                <input type="button" id="betHistory" value="Bet History">
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Arsenal vs Man U</div>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Chelsea vs Liverpool</div>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Man City vs Swansea</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                        <tr>
 
-            </div>
-        </td>
-        <td>
-            <div class="main" id="paymentsContainer">
-                <input type="button" id="payments" value="Payments">
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Arsenal vs Man U</div>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Chelsea vs Liverpool</div>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Man City vs Swansea</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                        <tr>
 
-            </div>
-        </td>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Arsenal vs Man U</div>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Chelsea vs Liverpool</div>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <div> Man City vs Swansea</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="Home 1.2" class="colour">
+                                <input type="button" value="Home 3.2" class="colour">
+                                <input type="button" value="Away 1.3" class="colour">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div align="center" id="betHistoryContainer" class="hidden">
+                    <table class="bets" align="top">
+                        <tr>
+                            <td>
+                                <div><u>BetId</u></div>
+                            </td>
+                            <td>
+                                <div><u>Pick</u></div>
+                            </td>
+                            <td>
+                                <div><u>Outcome</u></div>
+                            </td>
+                        </tr>
 
-    </div>
-</tr>
-<tr>
-    <td><p>Place Bet coming soon!</p></td>
-    <td><p>Bet History coming soon!</p></td>
-    <td><p>Payments Coming Soon!</p></td>
-</tr>
-</table>
+                        <tr>
+                            <td>
+                                <div>54363</div>
+                            </td>
+                            <td>
+                                <div>2</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: green" value="won" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>543623</div>
+                            </td>
+                            <td>
+                                <div>X</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: red" value="lose" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>54363</div>
+                            </td>
+                            <td>
+                                <div>2</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: green" value="won" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>543623</div>
+                            </td>
+                            <td>
+                                <div>X</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: red" value="lose" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>54363</div>
+                            </td>
+                            <td>
+                                <div>2</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: green" value="won" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>543623</div>
+                            </td>
+                            <td>
+                                <div>X</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: red" value="lose" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>54363</div>
+                            </td>
+                            <td>
+                                <div>2</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: green" value="won" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>543623</div>
+                            </td>
+                            <td>
+                                <div>X</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: red" value="lose" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>54363</div>
+                            </td>
+                            <td>
+                                <div>2</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: green" value="won" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>543623</div>
+                            </td>
+                            <td>
+                                <div>X</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: red" value="lose" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>54363</div>
+                            </td>
+                            <td>
+                                <div>2</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: green" value="won" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>543623</div>
+                            </td>
+                            <td>
+                                <div>X</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: red" value="lose" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>54363</div>
+                            </td>
+                            <td>
+                                <div>2</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: green" value="won" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>543623</div>
+                            </td>
+                            <td>
+                                <div>X</div>
+                            </td>
+                            <td>
+                                <input type="button" style="background-color: red" value="lose" disabled>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div align="center" id="paymentsContainer" class="hidden">
+                    <p>Payments Coming Soon!</p>
+                </div>
+            </td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
