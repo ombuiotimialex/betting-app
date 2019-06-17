@@ -1,6 +1,6 @@
 
 .mainContainer{
-    background-color: sandybrown;
+    background-color: bisque;
     margin: auto;
     width: 300px;
     border: 1px solid darkblue;
@@ -77,6 +77,6 @@
     color: black;
     background-color: beige;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 15px 15px;
     border: 1px solid greenyellow;
 }
