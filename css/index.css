@@ -1,6 +1,6 @@
 
 .mainContainer{
-    background-color: bisque;
+    background-color: beige;
     margin: auto;
     width: 300px;
     border: 1px solid darkblue;
@@ -22,12 +22,15 @@
     height: 200px;
     border-radius: 15px 15px;
     box-shadow: #cccccc 2px 2px 5px 6px;
+    background-color: beige;
 }
 .hidden{
     visibility: hidden;
+    height: 0px;
 }
 .shown{
     visibility: visible;
+    height: auto;
 }
 
 .circular{
@@ -60,6 +63,7 @@
 .payments{
     background-color: black;
     color: white;
+    margin: auto;
 }
 .matches{
     border-radius: 6px;
@@ -79,4 +83,14 @@
     margin: auto;
     border-radius: 15px 15px;
     border: 1px solid greenyellow;
+}
+.paymentsButton{
+    color: white;
+    background-color: green;
+    border-radius: 6px;
+}
+.withdrawals{
+    color:white;
+    background-color: red;
+    border-radius: 6px;
 }

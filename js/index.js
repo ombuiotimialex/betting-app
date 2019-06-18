@@ -49,7 +49,141 @@ function updateContent(selectedContainer) {
     }
 }
 
-function bigButton() {
-    background.color;
-    black;
+function generateMatchData() {
+    let matches = [
+        {
+            teams:
+                [
+                    {
+                        name: "Chelsea",
+                        odd: '1.23',
+                        coach: "Sir Alex"
+                    },
+                    {
+                        name: "Manchester United",
+                        odd: '3.23',
+                        coach: "Brian"
+                    },
+                    {
+                        draw: '2.32',
+                    },
+                ],
+            matchInfo:
+                {
+                    venue: "Stamford Bridge",
+                    time: '18-06-2019  28.00.00 Pm',
+                    division: "EPL",
+                    referee: "Mr. Eddie"
+                }
+
+        },
+        {
+            teams:
+                [
+                    {
+                        name: "Liverpool",
+                        odd: '2.21',
+                        coach: "Stanley"
+                    },
+                    {
+                        name: "Manchester City",
+                        odd: '2.13',
+                        coach: "Andrew"
+                    },
+                    {
+                        draw: '2.33'
+                    },
+                ],
+            matchInfo:
+
+                {
+                    venue: "Uhuru Garden",
+                    time: '18-06-2019 17.00.00 Pm',
+                    division: "EPL",
+                    referee: " Audrey"
+                }
+
+        },
+        {
+            teams:
+                [
+                    {
+                        name: "Crystal Palace",
+                        odd: '2.11',
+                        coach: "Daniels"
+                    },
+                    {
+                        name: " Real Madrid",
+                        odd: '4.64',
+                        coach: " Augustine"
+                    },
+                    {
+                        draw: '3.43'
+                    }
+                ],
+            matchInfo:
+
+                {
+                    venue: "Stamford Bridge",
+                    time: "18-06-2019  28.00.00 Pm",
+                    division: "EPL",
+                    referee: "Mr. Eddie"
+                }
+
+        },
+        {
+            teams:
+                [
+                    {
+                        name: "Ajax",
+                        odd: '2.54',
+                        coach: " Faustine"
+                    },
+                    {
+                        name: "Juventus",
+                        odd: '4.43',
+                        coach: " Christopher"
+                    },
+                    {
+                        draw: '2.66'
+                    }
+                ],
+            matchInfo:
+
+                {
+                    venue: "Pinper",
+                    time: "18-06-2019 17.00.00 Pm",
+                    division: "EPL",
+                    referee: " Luis"
+                }
+
+        },
+        {
+            teams:
+                [
+                    {
+                        name: "Ajax",
+                        odd: '2.54',
+                        coach: " Faustine"
+                    },
+                    {
+                        name: "Tottenham",
+                        odd: '4.43',
+                        coach: " Calla"
+                    },
+                    {
+                        draw: '2.66'
+                    }
+                ],
+            matchInfo:
+
+                {
+                    venue: "Spain",
+                    time: "18-06-2019 17.00.00 Pm",
+                    division: "EPL",
+                    referee: " Caleb"
+                }
+
+        }
+    ]
 }
