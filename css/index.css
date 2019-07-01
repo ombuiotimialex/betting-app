@@ -27,10 +27,15 @@
 .hidden{
     visibility: hidden;
     height: 0px;
+    border-bottom-right-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
 }
 .shown{
     visibility: visible;
     height: auto;
+    border-bottom-right-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
+
 }
 
 .circular{
@@ -49,12 +54,11 @@
 .rounded-corner-bottom-left{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-
 }
 .bet{
-    background-color: black;
     color: white;
-    onmouseover:background-color white;
+    background-color: black;
+
 }
 .history{
     background-color: black;
@@ -66,11 +70,12 @@
     margin: auto;
 }
 .matches{
-    border-radius: 6px;
     border: 1px solid white;
     width: auto;
     margin: auto;
     height: 400px;
+
+
 
 }
 .colour{
@@ -81,7 +86,6 @@
     color: black;
     background-color: beige;
     margin: auto;
-    border-radius: 15px 15px;
     border: 1px solid greenyellow;
 }
 .paymentsButton{
@@ -93,4 +97,8 @@
     color:white;
     background-color: red;
     border-radius: 6px;
+}
+.corners{
+    border-bottom-left-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
 }
